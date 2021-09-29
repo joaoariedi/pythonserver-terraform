@@ -27,7 +27,7 @@ jobs:
       
       - name: Go modules setup
         working-directory: /test
-        run: go get -v -t -d && go mod tidy
+        run: go mod init && go mod tidy
         
       - name: Run Go Tests
         working-directory: /test

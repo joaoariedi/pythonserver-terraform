@@ -24,10 +24,6 @@ jobs:
         uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
-      
-      - name: Go modules setup
-        working-directory: /test
-        run: go get -v -t -d ./... && go mod tidy
         
       - name: Run Go Tests
         working-directory: /test

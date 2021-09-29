@@ -2,10 +2,8 @@
 ## General notes
 
 
-### I'm having a some issues
-- The first one is terraform isn't skiping python server running to complete de provisioning. I tried to hide de outputs or use threading, tmus but no success yet.
-- I wanted to make the code more dynamic, but that was my first time in terraform, I spent maybe 5 ours to did it.
-- I have to create Gitlab Actions, but this week I'm very busy with some projects, I think I can do it by tomorrow.
+### Next improvement
+I'll try to send server.py file without provisioner ssh conection
 
 
 ## Conclusion
@@ -29,5 +27,3 @@
 ## Tests
 ## Terminal Run at test file
  - go test
-
- There is an issue to do tests, related to run the server, I'm trying to fix it.

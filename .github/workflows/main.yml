@@ -10,8 +10,8 @@ jobs:
         with:
           go-version: 1.13
       - name: Download Go Modules
-        working-directory: test
-        run: go mod tidy
+        working-directory: ../../test
+        run: go mod download
       - name: Run Go Tests
         working-directory: test
         run: go test

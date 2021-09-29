@@ -1,8 +1,8 @@
 name: Tag test
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+        branches:
+            - main
 jobs:
   go-tests:
     name: Run Go Tag Tests
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
         with:
-          go-version: 1.13.15
+          go-version: 1.15
       - uses: hashicorp/setup-terraform@v1
       - name: Download Go Modules
         working-directory: test

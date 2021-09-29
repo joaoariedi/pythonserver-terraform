@@ -1,0 +1,17 @@
+name: Example workflow
+
+on: [push]
+
+jobs:
+  example:
+    name: Example Terraform interaction
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Terraform
+        uses: autero1/action-terraform@v0.1.0
+        with:
+          terraform_version: 0.12.20
+      - name: Interact with Terraform
+        run: terraform --version

@@ -2,7 +2,7 @@ name: Tag test
 on:
   push:
     branches:
-      - john
+      - main
 jobs:
   go-tests:
     name: Run Go Tag Tests

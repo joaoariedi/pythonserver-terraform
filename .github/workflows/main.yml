@@ -1,12 +1,15 @@
 name: Tag test
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   go-tests:
     name: Run Go Tag Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-go@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
         with:
           go-version: 1.13.15
       - uses: hashicorp/setup-terraform@v1

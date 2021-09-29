@@ -2,9 +2,8 @@
 ## General notes
 
 
-### Next improvement
-I'll try to send server.py file without provisioner ssh conection
-
+### Next improvements
+- I'll try to send server.py file without provisioner ssh conection maybe getting server.py from s3 bucket
 
 ## Conclusion
  - I tried to use the minimal code to do it.
@@ -14,7 +13,6 @@ I'll try to send server.py file without provisioner ssh conection
 ## Requirements
  - Terraform
  - Terratest
- - AWSCLI
  - Create a file secret_varibles.tf and insert AWS credencials as Terraform Variables, it's necessary to use Boto3 on Python server
 
 ## Deploy
